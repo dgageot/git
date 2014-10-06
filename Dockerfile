@@ -1,10 +1,11 @@
 FROM google/debian:wheezy
 MAINTAINER David Gageot <david@gageot.net>
+ENV DEBIAN_FRONTEND noninteractive
 
 # Install git
 #
 RUN apt-get update -qq
-RUN apt-get install -y git
+RUN apt-get install -yqq git
 
 # Set working directory
 #
