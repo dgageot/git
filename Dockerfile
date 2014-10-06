@@ -4,8 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install git
 #
-RUN apt-get update -qq
-RUN apt-get install -yqq git
+RUN apt-get update -qq && apt-get install -yqq git
 
 # Set working directory
 #
