@@ -12,4 +12,7 @@ MAINTAINER David Gageot <david@gageot.net>
 
 RUN apt-get update && apt-get install -y git
 
+RUN mkdir /sources
+WORKDIR /sources
+
 ENTRYPOINT ["/usr/bin/git"]
